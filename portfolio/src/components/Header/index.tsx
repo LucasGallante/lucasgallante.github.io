@@ -1,28 +1,32 @@
 import React from 'react';
 
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+
 import './styles.css';
 
 const Header = () => {
     return (
         <header>
             <div className="filter">
-                <div className="top-bar-container">
-                    <div className="title">
-                        Portfolio
+                <Container>
+                    <Navbar collapseOnSelect expand="lg" className="menu">
+                        <Navbar.Brand href="#">My Portfolio</Navbar.Brand>
+                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                        <Navbar.Collapse id="responsive-navbar-nav">
+                            <Nav className="ml-auto">
+                                <Nav.Link href="#">Home</Nav.Link>
+                                <Nav.Link href="#about">About</Nav.Link>
+                                <Nav.Link href="#skills">Skills</Nav.Link>
+                                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                                <Nav.Link href="#contact">Contact</Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+                    <div className="texts">
+                        <h1>Hey! I'm Lucas.</h1>
+                        <p>Software developer from Campinas, Brazil.</p>
                     </div>
-                    <div className="menu">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Skills</a>
-                        <a href="#">Portfolio</a>
-                        <a href="#" className="contact">Contact</a>
-                    </div>
-                </div>
-
-                <div className="description">
-                    <h1>Hi, I'm Lucas Gallante</h1>
-                    <text>Software developer from Campinas, Brazil</text>
-                </div>
+                </Container>
             </div>
         </header>
     )

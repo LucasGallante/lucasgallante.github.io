@@ -1,9 +1,10 @@
 header {
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     height: 80vh;
     background: url("../../assets/images/business.jpeg") no-repeat;
     background-size: cover;
-    font-weight: bold;
+    font-family: 'Libre Franklin';
+    font-weight: 400;
     color: white;
 }
 
@@ -13,35 +14,45 @@ header {
     background: rgba(198, 108, 73, 0.45);
 }
 
+.filter .menu {
+    padding-top: 2.5rem !important;
+}
 
-.top-bar-container {
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: transparent !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.texts {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-left: 0rem;
     padding-top: 3rem;
 }
 
-
-.title {
-    font-size: 24px;
-    padding-left: 10%;
+.texts h1 {
+    font-family: 'Libre Franklin';
+    font-weight: 400;
 }
 
-.menu {
-    padding-right: 10%;
+@media (min-width: 992px) {
+    .texts {
+        justify-content: left;
+        display: inline-block;
+        padding-left: 1rem;
+        padding-top: 5rem;
+    }
 }
-
-.menu a {
-    padding-right: 2rem;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-.contact {
-    padding-right: 0;
-}
-.description {
-    padding: 10rem 0 0 10%;
-}
-

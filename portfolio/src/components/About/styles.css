@@ -1,4 +1,69 @@
-.about-page {
+#about {
     width: calc(100vw - (100vw - 100%));
     height: 80vh;
+}
+
+.about {
+    padding-top: 2rem;
+}
+
+.about .title {
+    padding-left: 0 !important;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2 {
+    font-family: 'Libre Franklin';
+    font-weight: 400;
+}
+
+.content {
+    padding-top: 2rem;
+    display: block;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+.picture img {
+    max-height: 20rem;
+}
+
+.description {
+    padding-top: 2rem;
+}
+
+@media (min-width: 992px) {
+    .about .title {
+        justify-content: left !important;
+    }
+
+    .about h2 {
+        padding-left: 1rem;
+    }
+
+    .content {
+        display: flex;
+        padding-left: 1rem;
+    }
+
+    .content .description {
+        padding-top: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .picture {
+        justify-content: left;
+    }
+
+
+
 }

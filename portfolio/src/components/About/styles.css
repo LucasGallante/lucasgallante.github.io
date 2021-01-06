@@ -1,10 +1,11 @@
 #about {
     width: calc(100vw - (100vw - 100%));
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .about {
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .about .title {
@@ -16,7 +17,6 @@
 }
 
 .about h2 {
-    font-family: 'Libre Franklin';
     font-weight: 400;
 }
 
@@ -41,6 +41,10 @@
 }
 
 @media (min-width: 992px) {
+    .about .container {
+        padding-left: 2rem;
+    }
+
     .about .title {
         justify-content: left !important;
     }
@@ -63,7 +67,4 @@
     .picture {
         justify-content: left;
     }
-
-
-
 }

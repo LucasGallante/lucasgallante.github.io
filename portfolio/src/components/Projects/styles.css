@@ -1,0 +1,89 @@
+#projects {
+    width: calc(100vw - (100vw - 100%));
+    min-height: 80vh;
+}
+
+.projects {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.projects .title {
+    padding-left: 0 !important;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects h2 {
+    font-weight: 400;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    padding-top: 2rem;
+    display: block;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title h6 {
+    font-weight: 600;
+}
+
+.project-description  {
+    margin-bottom: 2rem;
+}
+
+.project-description a {
+    text-decoration: underline;
+    color: black;
+}
+
+.project-description a:hover {
+    color: gray;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .projects .container {
+        padding-left: 2rem;
+    }
+
+    .projects .title {
+        justify-content: left !important;
+    }
+
+    .projects h2 {
+        padding-left: 1rem;
+    }
+
+    .project {
+        display: flex;
+    }
+
+    .project-title {
+        display: inline;
+    }
+
+    .project-description {
+        width: 40%;
+        margin-right: 2rem;
+    }
+
+    .project-image {
+        max-width: 60%;
+    }
+}

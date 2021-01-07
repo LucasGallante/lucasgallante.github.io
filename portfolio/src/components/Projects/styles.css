@@ -20,7 +20,7 @@
     font-weight: 400;
 }
 
-.content {
+.projects .content {
     display: flex;
     flex-direction: column;
 }

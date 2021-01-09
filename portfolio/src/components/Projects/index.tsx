@@ -19,7 +19,7 @@ const Projects = () => {
                     </div>
                     <div className="project">
                         <div className="project-description">
-                            This is a project that emulates the Instagram Landing Page. It was made using HTML and CSS. This is the <a href="https://github.com/LucasGallante/instagram-landing-page" target="_blank">code repository</a>.
+                            This is a project that emulates the Instagram Landing Page. It was made using HTML and CSS. This is the <a href="https://github.com/LucasGallante/instagram-landing-page" target="_blank" rel="noopener noreferrer">code repository</a>.
                         </div>
                         <div className="project-image">
                             <Image src={picture}></Image>
